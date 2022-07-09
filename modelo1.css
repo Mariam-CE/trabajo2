@@ -1,0 +1,53 @@
+* {
+	    font-family: 'Nunito', sans-serif;
+			box-sizing:border-box;
+	}
+	
+
+
+div#caja-grande {
+		  position: sticky;
+		  top: 0px;
+		  display: grid;
+		  grid-template-columns: 1fr 2fr;
+		  grid-template-rows: 120px 100vh;
+		  grid-gap: 2px;
+		  background-color: rgb(193,241,67);
+		  padding: 2px;
+		}
+		
+		
+div#caja-ancha {
+		  grid-column: 1 / span 2;
+		  grid-row: 1;
+		  color:black;
+		  background-color:#FFA247;
+		  display:flex;
+		  align-items: center; 
+		  justify-content: center;
+		}
+		
+div#grid-item {
+		  background-color: rgba(255, 255, 255, 1); /* blanco */
+		  text-align: center;
+		  padding: 10px;
+		  
+		  font-size: 30px;
+		}
+		
+div#general{
+	background-color:white; /* Determina el color de fondo de el bloque*/
+	display:inline;   /* el elemento se renderizará en línea con otros elementos. */
+	text-align:center; /* Determina que el texto está alineado al centro*/
+	font-weight: bolder; /* Determina que la fuente del texto está en negrita */
+	font-size: 25px; /* Determina el tamaño de la fuente del texto*/
+	width: 100p%; /* Determina el ancho*/
+    height: 500pt; /* Determina el alto*/
+	
+	margin-top: 50pt; /* Determina el margen superior*/
+    margin-right: 50pt; /* Determina el margen izquierdo*/
+    margin-bottom: 0pt; /* Determina el margen inferior*/
+    margin-left: 50pt; /
+	
+}		
+		

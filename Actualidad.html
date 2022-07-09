@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: 
+autor: 
+fecha: 
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>ACTUALIDAD</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+			box-sizing:border-box;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+			margin:0px;
+			width:100vw;
+		}
+		
+		.grid-container {
+		  position: sticky;
+		  top: 0px;
+		  display: grid;
+		  grid-template-columns: 1fr 2fr;
+		  grid-template-rows: 120px 100vh;
+		  grid-gap: 2px;
+		  background-color: black;
+		  padding: 2px;
+		}
+
+		.caja {
+		  background-color:  rgba(48, 140, 161, 1); /* blanco */
+		  text-align: center;
+		  padding: 10px;
+		  
+		  font-size: 30px;
+		}
+		
+		.caja2 {
+		  color: black;
+		  background-color: rgba(193,241,67, 1); 
+		  text-align: center;
+		  padding: 10px;
+		  
+		  font-size: 30px;
+		}
+		
+
+		.item1 {
+		  grid-column: 1 / span 2;
+		  grid-row: 1;
+		  color:white;
+		  background-color:black;
+		  display:flex;
+		  align-items: center; 
+		  justify-content: center;
+		}
+		.navbar {
+		  overflow: hidden;
+		  background-color: #FFA247;
+		}
+
+		.navbar a {
+		  float: left;
+		  font-size: 16px;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		.dropdown {
+		  float: left;
+		  overflow: hidden;
+		  background-color: #FFA247;
+		}
+
+		.dropdown .dropbtn {
+		  font-size: 16px;  
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: red;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #FFA247;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		
+		a:active {
+			color:yellow;
+			font-size:1.1em;
+			
+		}
+		
+		@media screen and (max-width:600px){
+			/* reparamos el estilo para pantallas estrechas */
+			
+			.navbar, .navbar a, .navbar>div, .dropbtn {
+				width:100%;
+				float: none;
+				display:block;
+			}
+		    .dropdown-content a{
+				display:none;
+			}
+
+
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+
+</head>
+
+
+<body>
+
+
+	<!-- bloque de contenido de la pagina -->
+	<div class="navbar">
+		<a href="Inicio.html">Inicio</a>
+		<a href="Actualidad.html">Actualidad</a>
+		<div class="dropdown">
+			<button class="dropbtn">Contenido 
+				 <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#Blog">Blog</a>
+				<a href="#Tendencias">Tendencias</a>
+				<a href="#Contenido">Contacto</a>
+			</div>
+		</div> 
+	<div class="grid-container">
+	
+
+	  <div class="grid-item item1"><h1>ACTUALIDAD</h1>
+	 
+	  
+	  </div>
+	  
+
+	  <div class="caja">
+	  <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/7F0C/production/_117042523__116998434_emails-leo.jpg" align="center" width="300" height="150" ><br/>
+	  <h2>Qué son los "pixeles espías" que grandes empresas te envían en sus mails para acceder a tu información privada</h2>
+	  
+	  </div>
+
+	  <div class="caja2">
+	 <font size="4"> El uso de tecnología de rastreo "invisible" en los correos electrónicos es ahora endémico, según un servicio de mensajería que analizó su tráfico a pedido de la BBC<br/>
+	 De acuerdo al análisis de Hey, dos tercios de los correos electrónicos enviados a las cuentas personales de sus usuarios contenían un "píxel espía", incluso después de excluirlos como correo basura.<br/>
+	 Sus creadores dicen que muchas marcas importantes utilizan email con píxeles, con la excepción de las "grandes firmas tecnológicas".<br/>
+	 Quienes defienden estas herramientas de rastreo dicen que son una táctica de mercadeo muy usada.<br/>
+	 Y varias de las compañías involucradas indican que el uso de esta tecnología está mencionado dentro de sus políticas de privacidad más amplias.<br/></font>
+	 <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/A61C/production/_117042524__117009669_hey5.jpg" align="center" width="300" height="150" ><br/><br/>
+	 <font size="4"><u>MI ANALASIS DE LA MATERIA</u><br/>
+	 Este trimestre no he podido dedicarle tanto tiempo a las materias como yo quisiera, pero estoy intentando mejorar en esto siempre que puedo y dedicarle el máximo tiempo que puedo.Espero conseguir al final del curso el nivel que necesito.</font>
+		 <footer>
+			<br/><br/><br/>
+			<div> 2021 mariatt@gmail.com</div>
+		</footer>
+	   </div>  
+	</div>
+
+
+</body>
+</html>

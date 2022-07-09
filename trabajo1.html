@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+ 
+  	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>TENDENCIAS</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="modelo1.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  
+  
+<style>
+* {
+	    font-family: 'Nunito', sans-serif;
+			box-sizing:border-box;
+		}
+		
+  
+  body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+			margin:0px;
+			width:100vw;
+		}
+		
+	.caja-grande {
+		  position: sticky;
+		  top: 0px;
+		  display: grid;
+		  grid-template-columns: 1fr 2fr;
+		  grid-template-rows: 120px 100vh;
+		  grid-gap: 2px;
+		  background-color: rgb(197, 54, 150);
+		  padding: 2px;
+		}
+	
+	.fuente {
+		   grid-column: 1 / span 2;
+		  grid-row: 1;
+		  color:black;
+		  background-color:black;
+		  display:flex;
+		  align-items: center; 
+		  justify-content: center;
+		}
+		
+	.caja {
+		  color: black;
+		  background-color: rgba(48, 140, 161, 1);
+		  text-align: center;
+		  padding: 10px;
+		  
+		  font-size: 30px;
+		}
+	.caja2 {
+	  color: black;
+	  background-color: rgba(193,241,67, 1); 
+	  text-align: center;
+	  padding: 10px;
+	  
+	  font-size: 30px;
+	}
+		
+	.navbar {
+		  overflow: hidden;
+		  background-color: #FFA247;
+		}
+
+		.navbar a {
+		  float: left;
+		  font-size: 16px;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		.dropdown {
+		  float:left;
+		  overflow: hidden;
+		  background-color: #FFA247;
+		}
+		.dropdown1 {
+		  float:right;
+		  overflow: hidden;
+		  background-color: #FFA247;
+		}
+
+		.dropdown .dropbtn {
+		  font-size: 16px;  
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: red;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #FFA247;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		
+		a:active {
+			color:yellow;
+			font-size:1.1em;
+			
+		}
+		
+		@media screen and (max-width:600px){
+			/* reparamos el estilo para pantallas estrechas */
+			
+			.navbar, .navbar a, .navbar>div, .dropbtn {
+				width:100%;
+				float: none;
+				display:block;
+			}
+		    .dropdown-content a{
+				display:none;
+			}
+						
+		
+		
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="modelo.js"></script>
+
+
+</head>
+ 
+<body>
+
+	<div class="navbar">
+			
+		<a href="Inicio.html">Inicio</a>
+		<a href="Actualidad.html">Actualidad</a>
+		<div class="dropdown">
+			<button class="dropbtn">Contenido 
+				 <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#Blog">Blog</a>
+				<a href="#Tendencias">Tendencias</a>
+				<a href="#Contenido">Contacto</a>
+				
+		
+			</div>
+			
+		</div> 
+		
+        <div id = "result" class="dropdown1"> </div>
+		
+		
+		
+		
+</div>
+
+
+
+
+<div class="caja-grande">
+
+	<div class="caja fuente"><h1>TENDENCIAS DE HOGAR</h1>
+		  
+		  
+	</div>
+	
+	
+    <div class="caja"><b>ESTILO Y DISEÑO DE ESPACIOS <br> Natural</b>
+	<h6 align=center>Para el 2021, existe un mayor interés en todo lo vivo, enfatizando la conexión entre 
+	el se humano y la naturaleza. Los materiales naturales y orgánicos
+	,como los suelos de madera, la piedra, la luz del día y la vida vegetal, 
+	nos recuerdan el exterior y nos aportan el exterior y la naturaleza.<h6>
+	<img  src="https://decoraideas.com/wp-content/uploads/2018/09/01_guetzli-19.jpg" align="center" width="200" height="150">
+	
+	
+	<h6 align=center> Se tiende a crear pequeños rincones para desechufarse de los televisores, ordenadores, móviles y toda la tecnología que nos invade<h6>
+
+	
+	</div>
+	
+	<div class="caja2"><b>MATERIALES EN TENDENCIA</b>
+	<h5 align=left><u>Maderas oscuras </u><h5>
+	<p> 
+	<img src="https://decoraideas.com/wp-content/uploads/2017/12/16_guetzli.jpg" align="right" width="300" height="200" >Este año, los tonos de madera más oscuros traen un resurgimiento del glamour retro y brindan una nueva visión del lujo moderno.
+    </p>
+	
+	
+	<h5 align=left><u>Terrazo </u><h5>
+	<p> 
+	<img src="https://decoraideas.com/wp-content/uploads/2018/09/01_guetzli-2.jpg" align="right" width="300" height="200" >El piso de terrazo era el típico piso de las casas venecianas del siglo XVI, una solución de bajo costo que reunía trozos de mármol y granito dispersos en forma de mosaico.
+    </p>
+
+
+	</div>
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  sessionStorage.setItem("veces", "1");
+  // Retrieve
+  document.getElementById("result").innerHTML = sessionStorage.getItem("veces");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+</body>
+</html>
